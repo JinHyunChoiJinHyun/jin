@@ -51,7 +51,7 @@ export function setupNavbar() {
   // 로고
   const logo = document.createElement("div");
   logo.className = "logo";
-  logo.textContent = "⛅ 매수하기 딱 좋은 날씨네!?";
+  logo.textContent = "매수하기 딱 좋은 날씨네!?";
   logo.addEventListener("click", () => (window.location.hash = ""));
 
   // 네비게이션 링크

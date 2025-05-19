@@ -30,7 +30,7 @@ a {
   --accent-color: #03c75a;
   --profit-color: #4caf50;
   --loss-color: #f44336;
-  --background-color: #f4f5f6;
+  --background-color: forestgreen;
   --card-bg-color: #fff;
   --input-bg-color: #fff;
   --input-border-color: #dce0e2;
@@ -53,13 +53,13 @@ body.dark-mode {
   --accent-color: #00b350;
   --profit-color: #66bb6a;
   --loss-color: #ef5350;
-  --background-color: #171924;
+  --background-color: #0A0A0A;
   --card-bg-color: #222531;
   --input-bg-color: #2a2d3a;
   --input-border-color: #3e4150;
   --border-color: #303340;
-  --text-color: #e0e0e0;
-  --text-secondary-color: #a0a8c4;
+  --text-color: #F5F5F5;
+  --text-secondary-color: #F5F5F5;
   --text-tertiary-color: #767c91;
   --card-shadow: 0 2px 10px #00000040;
   --inner-card-shadow: 0 1px 3px #0003;

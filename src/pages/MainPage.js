@@ -103,18 +103,18 @@ export function renderMainPage(container) {
       const weatherDayBlock = document.createElement("div");
       weatherDayBlock.className = "weather-day-block";
 
-      const dayLabel = document.createElement("div");
-      dayLabel.className = "weather-day-label";
-      if (forecast.day === "yesterday") dayLabel.textContent = "어제";
-      else if (forecast.day === "today") dayLabel.textContent = "오늘";
-      else if (forecast.day === "tomorrow") dayLabel.textContent = "내일";
+      // const dayLabel = document.createElement("div");
+      // dayLabel.className = "weather-day-label";
+      // if (forecast.day === "yesterday") dayLabel.textContent = "";
+      // else if (forecast.day === "today") dayLabel.textContent = "";
+      // else if (forecast.day === "tomorrow") dayLabel.textContent = "";
 
       const weatherIcon = document.createElement("span");
       weatherIcon.className = "weather-day-icon";
       weatherIcon.textContent = forecast.icon;
       weatherIcon.title = forecast.tooltip;
       
-      weatherDayBlock.appendChild(dayLabel);
+      // weatherDayBlock.appendChild(dayLabel);
       weatherDayBlock.appendChild(weatherIcon);
       dailyWeatherRow.appendChild(weatherDayBlock);
     });
@@ -132,20 +132,20 @@ export function renderMainPage(container) {
     "* 날씨 아이콘은 각 날짜의 예상 변동성을 나타냅니다.";
   left.appendChild(analysisNote);
 
-  const ctaButtons = document.createElement("div");
-  ctaButtons.className = "cta-buttons";
+  // const ctaButtons = document.createElement("div");
+  // ctaButtons.className = "cta-buttons";
 
-  const predictBtn = document.createElement("button");
-  predictBtn.textContent = "예측하기";
-  predictBtn.onclick = () => (window.location.hash = "prediction");
+  // const predictBtn = document.createElement("button");
+  // predictBtn.textContent = "예측하기";
+  // predictBtn.onclick = () => (window.location.hash = "prediction");
 
-  const discussBtn = document.createElement("button");
-  discussBtn.textContent = "토론방";
-  discussBtn.onclick = () => (window.location.hash = "discussion");
+  // const discussBtn = document.createElement("button");
+  // discussBtn.textContent = "토론방";
+  // discussBtn.onclick = () => (window.location.hash = "discussion");
 
-  ctaButtons.appendChild(predictBtn);
-  ctaButtons.appendChild(discussBtn);
-  left.appendChild(ctaButtons);
+  // ctaButtons.appendChild(predictBtn);
+  // ctaButtons.appendChild(discussBtn);
+  // left.appendChild(ctaButtons);
 
   // 우측 패널
   const right = document.createElement("div");

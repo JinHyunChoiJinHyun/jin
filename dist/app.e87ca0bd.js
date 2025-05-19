@@ -179,7 +179,7 @@ function setupNavbar() {
   // 로고
   var logo = document.createElement("div");
   logo.className = "logo";
-  logo.textContent = "⛅ 매수하기 딱 좋은 날씨네!?";
+  logo.textContent = "매수하기 딱 좋은 날씨네!?";
   logo.addEventListener("click", function () {
     return window.location.hash = "";
   });
@@ -572,14 +572,19 @@ function renderMainPage(container) {
     forecasts.forEach(function (forecast) {
       var weatherDayBlock = document.createElement("div");
       weatherDayBlock.className = "weather-day-block";
-      var dayLabel = document.createElement("div");
-      dayLabel.className = "weather-day-label";
-      if (forecast.day === "yesterday") dayLabel.textContent = "어제";else if (forecast.day === "today") dayLabel.textContent = "오늘";else if (forecast.day === "tomorrow") dayLabel.textContent = "내일";
+
+      // const dayLabel = document.createElement("div");
+      // dayLabel.className = "weather-day-label";
+      // if (forecast.day === "yesterday") dayLabel.textContent = "";
+      // else if (forecast.day === "today") dayLabel.textContent = "";
+      // else if (forecast.day === "tomorrow") dayLabel.textContent = "";
+
       var weatherIcon = document.createElement("span");
       weatherIcon.className = "weather-day-icon";
       weatherIcon.textContent = forecast.icon;
       weatherIcon.title = forecast.tooltip;
-      weatherDayBlock.appendChild(dayLabel);
+
+      // weatherDayBlock.appendChild(dayLabel);
       weatherDayBlock.appendChild(weatherIcon);
       dailyWeatherRow.appendChild(weatherDayBlock);
     });
@@ -593,21 +598,21 @@ function renderMainPage(container) {
   analysisNote.className = "analysis-note";
   analysisNote.textContent = "* 날씨 아이콘은 각 날짜의 예상 변동성을 나타냅니다.";
   left.appendChild(analysisNote);
-  var ctaButtons = document.createElement("div");
-  ctaButtons.className = "cta-buttons";
-  var predictBtn = document.createElement("button");
-  predictBtn.textContent = "예측하기";
-  predictBtn.onclick = function () {
-    return window.location.hash = "prediction";
-  };
-  var discussBtn = document.createElement("button");
-  discussBtn.textContent = "토론방";
-  discussBtn.onclick = function () {
-    return window.location.hash = "discussion";
-  };
-  ctaButtons.appendChild(predictBtn);
-  ctaButtons.appendChild(discussBtn);
-  left.appendChild(ctaButtons);
+
+  // const ctaButtons = document.createElement("div");
+  // ctaButtons.className = "cta-buttons";
+
+  // const predictBtn = document.createElement("button");
+  // predictBtn.textContent = "예측하기";
+  // predictBtn.onclick = () => (window.location.hash = "prediction");
+
+  // const discussBtn = document.createElement("button");
+  // discussBtn.textContent = "토론방";
+  // discussBtn.onclick = () => (window.location.hash = "discussion");
+
+  // ctaButtons.appendChild(predictBtn);
+  // ctaButtons.appendChild(discussBtn);
+  // left.appendChild(ctaButtons);
 
   // 우측 패널
   var right = document.createElement("div");
@@ -2654,7 +2659,7 @@ document.addEventListener("DOMContentLoaded", function () {
   (0, _store.setupNavbar)();
   (0, _router.initRouter)();
 });
-},{"./router.js":"app/router.js","../components/store.js":"components/store.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./router.js":"app/router.js","../components/store.js":"components/store.js"}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2679,7 +2684,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1421" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11125" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -2823,5 +2828,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app/app.js"], null)
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app/app.js"], null)
 //# sourceMappingURL=/app.e87ca0bd.js.map
